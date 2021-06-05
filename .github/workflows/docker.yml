@@ -22,8 +22,8 @@ jobs:
         name: Build and push playground-sandbox
         uses: docker/build-push-action@v2
         with:
-          context: ./sandbox
-          file: ./sandbox/Dockerfile
+          context: .
+          file: sandbox/Dockerfile
           push: true
           tags: ineva/playground-sandbox:latest
 
@@ -31,7 +31,7 @@ jobs:
         name: Build and push playground-sandbox-gvisor
         uses: docker/build-push-action@v2
         with:
-          context: ./sandbox
-          file: ./sandbox/Dockerfile.gvisor
+          context: .
+          file: sandbox/Dockerfile.gvisor
           push: true
           tags: ineva/playground-sandbox-gvisor:latest
