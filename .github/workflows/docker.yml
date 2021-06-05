@@ -23,7 +23,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: sandbox
-          file: Dockerfile
+          file: sandbox/Dockerfile
           push: true
           tags: ineva/playground-sandbox:latest
 
@@ -32,6 +32,6 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: sandbox
-          file: Dockerfile.gvisor
+          file: sandbox/Dockerfile.gvisor
           push: true
           tags: ineva/playground-sandbox-gvisor:latest
