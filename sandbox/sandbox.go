@@ -451,7 +451,7 @@ func startContainer(ctx context.Context) (c *Container, err error) {
 		"--tmpfs=/tmpfs:exec",
 		"-i", // read stdin
 
-		"--runtime=runsc",
+		// "--runtime=runsc",
 		"--network=none",
 		"--memory="+fmt.Sprint(memoryLimitBytes),
 
